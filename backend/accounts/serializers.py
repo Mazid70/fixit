@@ -20,7 +20,6 @@ class RegisterSerializer(serializers.ModelSerializer):
             username=validated_data["username"],
             email=validated_data["email"],
             password=validated_data["password"],
-            first_name=validated_data["first_name"],
             phone_number=validated_data["phone_number"]
         )
 

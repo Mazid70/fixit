@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { User, Mail, Lock, Phone, ArrowLeft, ShieldCheck, Check } from 'lucide-react';
+import { useAxiosData } from '../../CustomHooks/useAxiosData';
 
 export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImagePath }) {
-  // Account Information (Matching Schema: name, email, phone, password)
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [password, setPassword] = useState('');
-  
+ const axiosData=useAxiosData()
   const [error, setError] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
+ 
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
     setError('');
+    const form = e.target;
+    const fullName = form.fullName.value
+    const email = form.email.value
+    const phone = form.phone.value
+    const password = form.password.value  
+
 
     if (!fullName.trim() || !email.trim() || !phone.trim() || !password.trim()) {
       setError('Please fill in all credentials.');
@@ -29,18 +31,21 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
       setError('Password must be at least 6 characters.');
       return;
     }
-
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      onRegisterSuccess({
+ console.log({fullName,email,phone,password})
+    try {
+      const response = await axiosData.post('/register/', {
+        full_name: fullName,
+        username: fullName,
         email: email,
-        fullName: fullName,
-        isLoggedIn: true,
-        phone: phone,
+        phone_number: phone,
+        password: password
       });
-    }, 1200);
+      console.log(response)
+    } catch (err) {
+      setError('Registration failed. Please try again.');
+    }
+
+    
   };
 
   return (
@@ -154,12 +159,9 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
                 <div className="relative">
                   <User className="absolute left-3.5 top-3.5 h-4 w-4 text-zinc-600" />
                   <input
-                    id="reg-fullname"
                     name="fullName"
                     type="text"
                     required
-                    value={fullName}
-                    onChange={(e) => setFullName(e.target.value)}
                     className="w-full bg-zinc-900/40 border border-zinc-800 rounded-xl py-3.5 pl-10 pr-4 text-white placeholder-zinc-750 text-sm focus:outline-none focus:border-orange-500/50 focus:bg-zinc-900 transition-all"
                     placeholder="e.g. Sarah Connor"
                   />
@@ -172,12 +174,11 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
                 <div className="relative">
                   <Mail className="absolute left-3.5 top-3.5 h-4 w-4 text-zinc-600" />
                   <input
-                    id="reg-email"
+          
                     name="email"
                     type="email"
                     required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+
                     className="w-full bg-zinc-900/40 border border-zinc-800 rounded-xl py-3.5 pl-10 pr-4 text-white placeholder-zinc-750 text-sm focus:outline-none focus:border-orange-500/50 focus:bg-zinc-900 transition-all"
                     placeholder="sarah.connor@example.com"
                   />
@@ -190,12 +191,11 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
                 <div className="relative">
                   <Phone className="absolute left-3.5 top-3.5 h-4 w-4 text-zinc-600" />
                   <input
-                    id="reg-phone"
+        
                     name="phone"
                     type="tel"
                     required
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+      
                     className="w-full bg-zinc-900/40 border border-zinc-800 rounded-xl py-3.5 pl-10 pr-4 text-white placeholder-zinc-750 text-sm focus:outline-none focus:border-orange-500/50 focus:bg-zinc-900 transition-all"
                     placeholder="+1 (555) 000-0000"
                   />
@@ -208,12 +208,10 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
                 <div className="relative">
                   <Lock className="absolute left-3.5 top-3.5 h-4 w-4 text-zinc-600" />
                   <input
-                    id="reg-password"
                     name="password"
                     type="password"
                     required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+        
                     className="w-full bg-zinc-900/40 border border-zinc-800 rounded-xl py-3.5 pl-10 pr-4 text-white placeholder-zinc-750 text-sm focus:outline-none focus:border-orange-500/50 focus:bg-zinc-900 transition-all"
                     placeholder="••••••••"
                   />
@@ -222,19 +220,10 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
 
               <div className="pt-4">
                 <button
-                  id="btn-register-submit"
                   type="submit"
-                  disabled={isSubmitting}
+              
                   className="w-full bg-orange-500 hover:bg-orange-600 text-black font-black py-4 rounded-xl active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg disabled:opacity-50"
                 >
-                  {isSubmitting ? (
-                    <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
-                  ) : (
-                    <>
-                      <span>Register Account</span>
-                      <Check className="w-4 h-4 text-black stroke-[3]" />
-                    </>
-                  )}
                 </button>
               </div>
             </form>
