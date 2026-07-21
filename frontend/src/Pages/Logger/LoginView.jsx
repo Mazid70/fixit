@@ -53,7 +53,7 @@ export default function LoginView({ onSwitchView, onLoginSuccess, heroImagePath 
   };
 
   return (
-    <div  className="min-h-screen  bg-[#050505] flex flex-col lg:flex-row text-white font-sans overflow-hidden">
+    <div  className="h-screen  bg-[#050505] flex flex-col lg:flex-row text-white font-sans overflow-hidden">
       
       {/* Left Branding Panel (Bold Typography Signature) */}
       <div  className="relative flex-1 flex flex-col justify-between p-8 sm:p-12 lg:p-16 bg-gradient-to-br from-[#0A0A0A] to-[#050505] border-b lg:border-b-0 lg:border-r border-white/5 overflow-hidden min-h-[480px] lg:min-h-screen">

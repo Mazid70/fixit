@@ -56,7 +56,7 @@ export default function Logger() {
   };
 
   return (
-    <div className="bg-slate-950 text-slate-100 min-h-screen selection:bg-orange-500/30 selection:text-orange-400 flex flex-col justify-between">
+    <div className="bg-slate-950  text-slate-100 h-screen selection:bg-orange-500/30 selection:text-orange-400 flex flex-col justify-between pt-10">
       
       {/* Dynamic Animated Page Transitions using AOS */}
       <div>
@@ -84,7 +84,7 @@ export default function Logger() {
           <div
             key="success-page"
             data-aos="zoom-in"
-            className="min-h-screen bg-[#050505] flex flex-col justify-center items-center p-4 sm:p-6 relative overflow-hidden"
+            className="h-screen bg-[#050505] flex flex-col justify-center items-center p-4 sm:p-6 relative overflow-hidden"
           >
             {/* Ambient background blur */}
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-orange-500/10 rounded-full blur-[100px] pointer-events-none"></div>

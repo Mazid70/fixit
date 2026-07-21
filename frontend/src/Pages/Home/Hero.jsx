@@ -13,7 +13,7 @@ export default function Hero({ onSearch }) {
   };
 
   return (
-    <section className="relative min-h-[750px] flex flex-col items-center justify-center text-center px-6 md:px-10 overflow-hidden bg-[#0e0e0e]">
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 md:px-10 overflow-hidden bg-[#0e0e0e]">
       {/* Radial Gradient Background Accent */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,rgba(249,115,22,0.08)_0%,transparent_60%)]"></div>
 

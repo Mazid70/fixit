@@ -1,0 +1,192 @@
+[
+  {
+    "id": "alexander-vance",
+    "name": "Alexander Vance",
+    "specialty": "Elite Executive Concierge & Private Security Liaison",
+    "category": "Concierge Services",
+    "rating": 4.9,
+    "bookings": "842",
+    "rate": 125,
+    "location": "Los Angeles, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCgghPtpBiGcyoMggvCqnWw8jzjzr29ofadtOIdgO-1iYEGRQJLYWvwML6YC4mqhZgf7PZPlpRIbWuf7RD8sUI3rry_DjsVQGo-pKcvGVv38gD0IDe9hfpX8oeZTrV9DZL--g9TK4N71va8KSZVe2_K2sNwPL-wKx_ol2Pu4uYquDq0wWu_QVvUACQv1w5pKGRBYWZpk9G_5-NJaUGqWd9BRFPwLv6VwRffcCRTQwVQHVmaN1IpjFRIBoRiuvdqKp1c-bkoxSRBKdFm",
+    "description": "Providing discreet, top-tier executive protection, VIP mobility management, and bespoke concierge dispatch for ultra-high-net-worth clients worldwide.",
+    "experience": "12+ Years Experience",
+    "skills": [
+      "Diplomatic Security",
+      "Chauffeur Logistics",
+      "Crisis Management",
+      "Private Aviation Access"
+    ],
+    "availability": "Immediate Dispatch"
+  },
+  {
+    "id": "elena-rodriguez",
+    "name": "Elena Rodriguez",
+    "specialty": "Personal Lifestyle Architect & Luxury Travel Curator",
+    "category": "Luxury Travel",
+    "rating": 5.0,
+    "bookings": "1,240",
+    "rate": 180,
+    "location": "Beverly Hills, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBLsA1HSL3GqyzOLVhDhxKIeWdKkHmsq_TP6DE-UM2L5CdEVQ7vrn277kqOQY_CZkq7jB_zSBAR3UWxNtB7XYmoswiQlPyZulZOUb4YOfH7y3W-skg5evmFWw7t4zxREOJZrcgbb5KjyXIxxsAt3v-P7HLTvpoYx6BaLM1tswXcMUjrPTw6BbrnwN73j7tdBzVkMowCumcP3Fh_qfmY-feU9go-XEbvyV0l7nAM3U-b1MGcd9RYkIm_VjQbadFNJ2SrsmuS7hoXMDmR",
+    "description": "Specializing in private jet charters, superyacht itineraries, and exclusive access to red-carpet global galas and private estate reservations.",
+    "experience": "15 Years Experience",
+    "skills": [
+      "Superyacht Booking",
+      "VIP Airport Transfer",
+      "Michelin Reservations",
+      "Bespose Itineraries"
+    ],
+    "availability": "Available Next Day"
+  },
+  {
+    "id": "marcus-thorne",
+    "name": "Marcus Thorne",
+    "specialty": "Master Sommelier & Private Culinary Experience Lead",
+    "category": "Private Dining",
+    "rating": 4.8,
+    "bookings": "520",
+    "rate": 210,
+    "location": "Malibu, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAw6_HNqmrFn7dyoqRzesaUJ-sU_c9wlZqlQOy-YkcGn80Mdq8IW7e1DKJzlBicbM_7knnCYMYXnvYMzFVa1RQxEvBG98lk3cXy90y2T7wZX3IskcYkxA2yEZ_jY2Sdc0V5unIi6HhIiHbZco619mLp7NNXIS235u9sf2fMyk8M6xfCqG-v-EpKamyRHsay9FW6ksxQa8WxFUtHyIOypbmgLE5ExxHaml0VG6KiLWSdj7UptI4jajIU368TQcuMW6ZboBNZ98sLXE1T",
+    "description": "Former Michelin 3-star executive chef curating multi-course tasting menus, wine pairing cellars, and intimate private banquets.",
+    "experience": "18 Years Experience",
+    "skills": [
+      "Farm-to-Table Gastronomy",
+      "Rare Vintage Cellars",
+      "VIP Dinner Parties",
+      "Dietary Precision"
+    ],
+    "availability": "Book 48h Advance"
+  },
+  {
+    "id": "julianna-kent",
+    "name": "Julianna Kent",
+    "specialty": "Luxury Event Designer & Floral Artisan",
+    "category": "Concierge Services",
+    "rating": 4.9,
+    "bookings": "312",
+    "rate": 150,
+    "location": "Santa Monica, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAlbFHklb6PRFnyB6XNbQYcxINDg4oTmibzrIrWspINm31BjoGDYlCIoRPsL_9umrbyyNDle2Cb1MT-M0PQr3TvRaXN33tnB8ROaPq57Sn8eBzW6BtSb09leTYmeMrpewj_vI4ZBQxO5Pp4LYLd5RchaNAInzJj3t-s4q2JQPTui-gQI3fKrMRpxY7yhfX6dyI_8XuDYS7CtoNlvkuwJRXPeZXvAdZ9BLihsc4xOyKEfSdXc_MGFNy2VwITKFX2O3aqGDs1FsRZUeAO",
+    "description": "Creating immersive floral installations, ambient lighting design, and private estate transformation for intimate celebrity events.",
+    "experience": "9 Years Experience",
+    "skills": [
+      "Architectural Floristry",
+      "Estate Decor",
+      "Gala Styling",
+      "Lighting Design"
+    ],
+    "availability": "Available This Week"
+  },
+  {
+    "id": "david-chen",
+    "name": "David Chen",
+    "specialty": "Smart Home Integration Expert & AV Specialist",
+    "category": "Concierge Services",
+    "rating": 4.7,
+    "bookings": "195",
+    "rate": 95,
+    "location": "Pasadena, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBHEJBuI0E3ClSj-_3iuXInqHpWsG7x9TEX_6Ke8HosajOFpKO9EoShAbnOiC1XQTo3jLUzMzaLuhy1BTyFLjWfChw_IT30yuG29twZofzNB9u-G01SuVrq9jF6NkqZKJh8ZaS6quSvt8FvmHr_TYJUyTpb3TuQFtbeAFyJ6-xrTp-c3MxQgT_iOuV5RNImgEhV0cTnUCMZF2dHdIlc6ZfTkfiWdVM6968TjXmaLTXLUX87nqEfiKQBxVAgTwG7yuunQ6oAGKsiks4v",
+    "description": "Custom acoustic theater design, Crestron/Lutron automation calibration, and ultra-secure encrypted residential Wi-Fi architectures.",
+    "experience": "10 Years Experience",
+    "skills": [
+      "Crestron Automation",
+      "Private Cinema Tuning",
+      "Perimeter Surveillance",
+      "Acoustic Engineering"
+    ],
+    "availability": "Same Day Available"
+  },
+  {
+    "id": "sophia-larsson",
+    "name": "Sophia Larsson",
+    "specialty": "Holistic Performance Coach & Private Wellness Lead",
+    "category": "Wellness & Spa",
+    "rating": 5.0,
+    "bookings": "410",
+    "rate": 165,
+    "location": "West Hollywood, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3D8P3aCR5Fdvb1Gc1hKGNZfgqmqg6lEAqs2sM3YKrRGUi2WLP5vRA1DeMhAa2E-0eH68SYgCw21NvJ3oE553t5zUnOkMGuodOGFNFj5JXja5_x2hyshEYfq68vfm1yZgmUVCU9zDMhaX4FXfxOVHhkDOrzBtdJy-JPgGz9ReNtgVpLAcxuNAZAZ7bRfq70e48Wv9A2wjOWIjktmu7VOFkEmQg2lrbZOc11mXpOxsqnT4N33Bq-1N3mnnLZi9o3M0r-rGHjrdk3S7B",
+    "description": "Designing customized longevity protocols, private sound bath therapies, breathwork, and high-performance physical conditioning.",
+    "experience": "11 Years Experience",
+    "skills": [
+      "Cryotherapy Protocol",
+      "Mindfulness Optimization",
+      "Postural Realignment",
+      "Bio-metric Tracking"
+    ],
+    "availability": "Available Tomorrow"
+  },
+  {
+    "id": "julian-thorne",
+    "name": "Julian Thorne",
+    "specialty": "Elite Interior Architect & Estate Space Planner",
+    "category": "Concierge Services",
+    "rating": 4.9,
+    "bookings": "420",
+    "rate": 250,
+    "location": "Bel Air, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBp50BpSlvPZIVT8KvHjasRu6IoAr487JK4hW0tKrwHlKQbmuK-rY_dF1N_IuOtshKVHrNambTGZj8uyNw6Ge74fQYTLwEi1vpYSgl0f_tIh8AA41d7epW9lcTpaI66gk9gTr1qQRf5376ECTcp5TNSubHf9JIExdvkYsgzq2V9fU21S6ZbDEjC6-J6zIOMx474LLrHYE2IHhxp2GKrSvwaKYAMBcVO9B8laTKRkQ-J0u_WP43Nm4bsLjCNRn-SC-mFriILr4ychV18",
+    "description": "Transforming luxury estates with sustainable materials, bespoke Italian marble finishes, and modern minimalist architectural flair.",
+    "experience": "14 Years Experience",
+    "skills": [
+      "Spatial Architecture",
+      "Custom Millwork",
+      "3D VR Rendering",
+      "Sustainable Materials"
+    ],
+    "availability": "Book 3 Days Advance"
+  },
+  {
+    "id": "elena-vance-electric",
+    "name": "Elena Vance",
+    "specialty": "Master Electrician & High-Voltage Automation Specialist",
+    "category": "Concierge Services",
+    "rating": 5.0,
+    "bookings": "1,200",
+    "rate": 180,
+    "location": "Century City, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBjfbrcmnSHb-4rA4s06-6wUp-DejntJJqGPYGc8dzISD0NdT691Q9-y7qWz-MSDw3UCsw3XBfCQ-sPE4KqPduHxpso8pstOcfoLPM52q0XFtJxGmYQz7QxCYa8TaxUHsLBusxTOQqRJR7eJp6L6epzEKg34S7kaybEONvXSEEMzU0PfxHf0wjnB1_DyR4rCO5plvMx9sqYQO6juNUfH7ljZChKvZ184qCc0VXMYlI1KgtKaJfNxoirdoJqE2ZeA2-jU6AiedcECgea",
+    "description": "Architectural lighting installations, Tesla Wall batteries, complex backup generator sync, and emergency electrical diagnostics.",
+    "experience": "16 Years Experience",
+    "skills": [
+      "Solar Storage",
+      "Lutron Lighting",
+      "Commercial Grade Power",
+      "Emergency Repair"
+    ],
+    "availability": "Immediate Dispatch"
+  },
+  {
+    "id": "marcus-sterling",
+    "name": "Marcus Sterling",
+    "specialty": "Smart Systems Expert & Cyber-Physical Security Engineer",
+    "category": "Concierge Services",
+    "rating": 4.8,
+    "bookings": "280",
+    "rate": 210,
+    "location": "Calabasas, CA",
+    "verified": true,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCz1wPiQN7XVGyCI7906D-RQfxxMG6GQYvTAY3WdYnva2vjCbTwl8V0Hk7L0z3N5YCv6d29zcwqHNiHjti-JUWJiUrAJ2FK1Q1qBpZRlwJL3DTsYDpxpj2969ikGGMKANg0L9c2-XZbEg110ZrQzqhrrD1hE5UD-TeYHsrQgCJ-xHkq14rC50O6GlJIhjzV_duKhxPdJQ3frbmmcMJApqZ61ADoDLwKACaIeHUJaslQ-j7aPmbtidWctgHXnDobLmRnJLGiY3zc-x18",
+    "description": "Deploying biometric entry points, anti-eavesdropping Faraday rooms, and autonomous home intelligence monitoring.",
+    "experience": "13 Years Experience",
+    "skills": [
+      "Biometric Access",
+      "Faraday Shielding",
+      "Drone Surveillance",
+      "Network Defense"
+    ],
+    "availability": "Available Next Day"
+  }
+]
+

@@ -50,7 +50,7 @@ export default function Footer() {
                 <Shield className="w-4 h-4 text-black stroke-[2.5]" />
               </div>
               <span className="font-display text-lg font-bold text-white uppercase tracking-tighter">
-                LuxeServe
+                fixit
               </span>
             </div>
             <p className="text-zinc-500 text-xs max-w-xs text-center md:text-left leading-relaxed">

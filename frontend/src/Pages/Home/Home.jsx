@@ -28,7 +28,7 @@ export default function Home({ onNavigateToRegister, onNavigateToLogin }) {
   };
 
   return (
-    <div className="bg-[#0e0e0e] text-[#dae2fd] min-h-screen font-sans selection:bg-orange-500/30 selection:text-orange-400">
+    <div className="bg-[#0e0e0e] pt-10 text-[#dae2fd] min-h-screen font-sans selection:bg-orange-500/30 selection:text-orange-400">
       {/* 1. Hero Section */}
       <Hero onSearch={handleJoinAction} />
 

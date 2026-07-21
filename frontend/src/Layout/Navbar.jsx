@@ -129,7 +129,7 @@ export default function Navbar({ onNavigateToLogin, onNavigateToRegister, sessio
 
   const desktopNavItems = [
     { id: 'nav-link-explore', label: 'Home', targetId: 'categories-section' },
-    { id: 'nav-link-how-it-works', label: 'How it Works', targetId: 'how-it-works-section' },
+    { id: 'nav-link-how-it-works', label: 'Explore', to: '/explore' },
     { id: 'nav-link-pricing', label: 'Performance', targetId: 'stats-section' },
     { id: 'nav-link-partner', label: 'Become a Partner', to: '/register' },
   ];
