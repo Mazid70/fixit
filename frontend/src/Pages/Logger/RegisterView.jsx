@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { User, Mail, Lock, Phone, ArrowLeft, ShieldCheck, Check } from 'lucide-react';
-import { useAxiosData } from '../../CustomHooks/useAxiosData';
+import useAxiosData from '../../CustomHooks/useAxiosData';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { useNavigate } from 'react-router';
 
 export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImagePath }) {
- const axiosData=useAxiosData()
+  const {register}=useContext(AuthContext)
   const [error, setError] = useState('');
- 
+  const navigate= useNavigate()
 
   const handleSubmit =async (e) => {
     e.preventDefault();
@@ -13,11 +15,10 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
     const form = e.target;
     const fullName = form.fullName.value
     const email = form.email.value
-    const phone = form.phone.value
     const password = form.password.value  
 
 
-    if (!fullName.trim() || !email.trim() || !phone.trim() || !password.trim()) {
+    if (!fullName.trim() || !email.trim() || !password.trim()) {
       setError('Please fill in all credentials.');
       return;
     }
@@ -31,17 +32,19 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
       setError('Password must be at least 6 characters.');
       return;
     }
- console.log({fullName,email,phone,password})
+
     try {
-      const response = await axiosData.post('/ac/register/', {
-        full_name: fullName,
-        email: email,
-        phone_number: phone,
-        password: password
-      });
+      await register({
+        username: fullName,
+         email,
+         password,
+       });
+       form.reset();
+
+       navigate('/');
       console.log(response)
     } catch (err) {
-      setError('Registration failed. Please try again.');
+      setError(err.message);
     }
 
     
@@ -185,21 +188,7 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
               </div>
 
               {/* Phone */}
-              <div className="space-y-1">
-                <label className="block text-xs uppercase tracking-widest text-zinc-500 font-black font-mono">Phone Number</label>
-                <div className="relative">
-                  <Phone className="absolute left-3.5 top-3.5 h-4 w-4 text-zinc-600" />
-                  <input
-        
-                    name="phone"
-                    type="tel"
-                    required
-      
-                    className="w-full bg-zinc-900/40 border border-zinc-800 rounded-xl py-3.5 pl-10 pr-4 text-white placeholder-zinc-750 text-sm focus:outline-none focus:border-orange-500/50 focus:bg-zinc-900 transition-all"
-                    placeholder="+1 (555) 000-0000"
-                  />
-                </div>
-              </div>
+              
 
               {/* Password */}
               <div className="space-y-1">
@@ -222,7 +211,7 @@ export default function RegisterView({ onSwitchView, onRegisterSuccess, heroImag
                   type="submit"
               
                   className="w-full bg-orange-500 hover:bg-orange-600 text-black font-black py-4 rounded-xl active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg disabled:opacity-50"
-                >
+                >Register
                 </button>
               </div>
             </form>
